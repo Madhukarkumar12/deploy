@@ -1,0 +1,261 @@
+.bg {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #03081B;
+    /* position: relative; */
+
+}
+
+.login-box {
+    /* position: relative; */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    box-sizing: border-box;
+    height: 450px;
+    top: 177px;
+    left: 610px;
+    border-radius: 5px;
+    background: #0E0E0EE5;
+    backdrop-filter: blur(37.29999923706055px);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 6px;
+    margin-top: 21px;
+    padding: 1px;
+    margin-bottom: 15px;
+}
+
+.container img {
+    width: auto;
+    height: 42px;
+    margin-bottom: 4px;
+}
+
+.brand-name {
+    color: #68B5C7;
+    font-family: Qualcomm Next;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.brand-subtitle {
+    color: #68B5C7;
+    font-family: Qualcomm Next;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.upper {
+    width: 700px;
+    /* height: 127px; */
+    flex: 1.8;
+    top: 177px;
+    left: 610px;
+    background: #000000;
+    box-shadow: 0px 4px 15px 0px #0000000D;
+    gap: 10px;
+}
+
+.lower {
+    flex: 8.2;
+    width: 700;
+    height: 599;
+    top: 177px;
+    left: 610px;
+    opacity: 0.9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information {
+    width: 300px;
+    /* height: 475.99993896484375px; */
+    height: auto;
+    top: 371px;
+    left: 691px;
+    margin-bottom: 13px;
+
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 300px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+    right: 12px;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    color: #888;
+    pointer-events: none;
+    margin-left: 11px;
+    /* background-color: #0E0E0EE5; */
+}
+
+.input-css {
+    /* width: 537.6505126953125; */
+    width: 100%;
+    height: 44px;
+    border-radius: 5px;
+    border-width: 1px;
+    border: 1px solid #93A8C1;
+    box-sizing: border-box;
+    /* padding: 10px 40px 10px 12px; */
+    padding: 6px 40px 6px 12px;
+    background: #0E0E0EE5;
+    color: white;
+}
+
+.input-css::placeholder {
+    color: rgb(182, 171, 171);
+    font-size: 12px;
+}
+
+.input-css:focus {
+    outline: 2px solid #93A8C1;
+}
+
+.mail-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* transform: translateX(-130%); */
+    color: #7089F0;
+    width: 18px;
+    height: 18px;
+    /* pointer-events: none; */
+}
+
+.password-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7089F0;
+    width: 18px;
+    height: 18px;
+    /* pointer-events:none; */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.label {
+    width: 90px;
+    height: 23px;
+    top: 462.08px;
+    left: 691px;
+    font-family: Qualcomm Next;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    top: 787px;
+    left: 691px;
+    border-radius: 5px;
+    gap: 10px;
+    background: #3253DC;
+    margin-top: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: #FFFFFF;
+
+}
+
+h2 {
+    width: 147px;
+    height: 41px;
+    top: 371px;
+    left: 691px;
+    font-family: Qualcomm Next;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #68B5C7;
+
+}
+
+/* footer section start here.. */
+.span {
+    width: 56;
+    height: 24;
+    top: 993px;
+    left: 704px;
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* This is 70% black */
+    z-index: 0;
+}
+
+.footer {
+    /* position:relative; */
+    z-index: 1;
+}
+
+.grok {
+    width: 100px;
+    height: 28px;
+
+    transform: translateY(34%);
+    margin-right:2px;
+    margin-left: 2px;
+
+    /* top: 991px; */
+    /* left: 826px; */
+    /* border: 0.3px solid #FFFFFF */
+}
