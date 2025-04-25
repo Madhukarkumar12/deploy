@@ -1,0 +1,172 @@
+.navbar {
+    height: 65.2420654296875px;
+    background: #0D101B;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 6px;
+    margin-top: 21px;
+    padding: 1px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+
+.left img {
+    width: auto;
+    height: 42px;
+    margin-bottom: 4px;
+}
+
+.brand-name {
+    color: #68B5C7;
+    font-family: Qualcomm Next;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.brand-subtitle {
+    color: #68B5C7;
+    font-family: Qualcomm Next;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 55px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 2px;
+}
+
+.nav-link img {
+    width: 13.333333015441895px;
+    height: 12px;
+    top: 27px;
+    left: 1150px;
+    border-width: 1.5px;
+    color: #9FB9DB;
+}
+
+.nav-link span {
+    width: 70;
+    height: 18;
+    top: 23.62px;
+    left: 1172.09px;
+    font-family: Qualcomm Next;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 128%;
+    letter-spacing: 0%;
+    color: #9FB9DB;
+
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 4px;
+}
+
+.profile-bio {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #457AD0;
+    text-transform: uppercase;
+    font-family: Qualcomm Next;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.profile-title {
+    font-family: Qualcomm Next;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF;
+
+}
+
+.profile-subtitle {
+    font-family: Nunito Sans;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF;
+
+}
+
+.profile img {
+    width: 24px;
+    height: 24px;
+    top: 21.62px;
+    left: 1879px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.profile-icon.rotate {
+    transform: rotate(180deg);
+}
+
+.logout-dropdown {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    margin-top: 0px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    margin-right:3px;
+}
+
+.logout-button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
