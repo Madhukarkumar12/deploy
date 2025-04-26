@@ -1,0 +1,42 @@
+.content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.content-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.robot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.robot img {
+    width: 157px;
+    height: 223px;
+    top: 569px;
+    left: 738px;
+}
+
+.welcome {
+    width: 570;
+    height: 30;
+    top: 587.08px;
+    left: 532px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    /* color: #FFFFFF; */
+
+}

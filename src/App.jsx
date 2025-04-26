@@ -4,6 +4,7 @@ import './App.css'
 import bgImage from './assets/industry.avif';
 import Login from './components/Login';
 import Navbar from './components/Navbar';
+import SiteAi from './components/site/SiteAi';
 
 const appRouter = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const appRouter = createBrowserRouter([
   {
     path:'/navbar',
     element:<Navbar/>
+  },
+  {
+    path:'/siteai',
+    element:<SiteAi/>
   }
 ])
 
