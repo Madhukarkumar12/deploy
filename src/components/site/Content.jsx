@@ -1,8 +1,9 @@
 import React from 'react'
 import robot from "../../assets/robot.png";
 import search from "../../assets/search.png";
+import sort from "../../assets/sort.png";
 import './Content.css';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, SearchIcon } from 'lucide-react';
 
 const Content = () => {
   return (
@@ -33,9 +34,17 @@ const Content = () => {
             <span className='past'>Past Queries</span>
             <span className='save'>Saved Queries</span>
           </div>
-          <ArrowRight className='arrow'/>
+         <ArrowRight className='arrow'/>
         </div>
-        <div className='search-container'></div>
+        <div className='dashline'>
+          <hr className='dash1'/>
+          <hr className='dash2'/>
+        </div>
+        <div className='search-container'>
+           <SearchIcon className='searchicon'/>
+           <input type="text" class="search-input" placeholder="Search..." />
+           <img src={sort} className='sort' alt='sort'/>
+        </div>
         <div className='query-history'></div>
       </aside>
     </main>

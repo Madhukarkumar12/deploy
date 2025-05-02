@@ -13,7 +13,6 @@
     justify-content: center;
     align-items: center;
     gap: 120px;
-    /* margin-top: 10px; */
     color: #f9f9f9;
     background: #27282bf1;
 
@@ -43,7 +42,6 @@
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0%;
-    /* color: #FFFFFF; */
 
 }
 
@@ -53,8 +51,6 @@
     justify-content: center;
     align-items: center;
     gap: 22px;
-    /* padding-left:20px;
-    padding-right:20px; */
 }
 
 .suggestion {
@@ -85,7 +81,6 @@
     font-size: 13px;
     line-height: 100%;
     letter-spacing: 0%;
-    /* color: #CBCAFF; */
 
 }
 
@@ -115,8 +110,6 @@
 
 .search-form {
     position: relative;
-    /* padding-left: 20px;
-    padding-right:20px; */
 }
 
 .search-button {
@@ -140,7 +133,6 @@
     angle: -45 deg;
     color: #00B2FF;
     object-fit: contain;
-    /* margin-right:30px; */
 }
 
 /* Sidebar */
@@ -153,8 +145,6 @@
     overflow: hidden;
     /* border-left: 1px solid #ccc; */
     background: #021327;
-
-    /* Optional separator */
 }
 
 .sidebar-header {
@@ -166,6 +156,8 @@
 .sidebar-title {
     display: flex;
     flex: 8.5;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 .arrow {
@@ -174,8 +166,7 @@
     height: 15px;
     top: 89px;
     left: 1883px;
-
-    /* border: 1.5px solid #FFFFFF */
+    cursor: pointer;
 }
 
 .past {
@@ -204,4 +195,69 @@
     letter-spacing: 0%;
     color: #4E638C;
 
+}
+
+.dashline {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 0px;
+    width: 100%;
+    padding-left: 7px;
+}
+
+.dash1 {
+    width: 75px;
+    top: 122px;
+    left: 1647px;
+    border-width: 1px;
+    border: 1px solid #1593B0
+}
+
+
+.search-container {
+    position: relative;
+    padding-left:3px;
+    padding-right: 9px;
+    margin-top:5px;
+    margin-left:6px;
+    margin-right:8px;
+}
+
+.search-input {
+    /* width: 258px; */
+    width: 100%;
+    height: 35px;
+    top: 142px;
+    left: 1649px;
+    border-radius: 5px;
+    border-width: 1px;
+    /* padding-left:5px; */
+    gap: 8px;
+    background: #0E1620;
+    border: 1px solid var(--Border-default, #707472);
+    color:white;
+}
+.search-input::placeholder{
+    position:absolute;
+    transform:translateX(50%);
+}
+
+.searchicon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    transform:translateY(50%);
+    padding-left: 4px;
+    padding-top: 1px;
+    color:gray;
+    cursor:pointer;
+
+}
+.sort{
+    width:18px;
+    height: 18px;
+    position: absolute;
+    right:10px;
+    top:25%;
+    cursor:pointer;
 }

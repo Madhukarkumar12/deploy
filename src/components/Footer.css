@@ -1,0 +1,21 @@
+.footer {
+    width: 100%;
+    height: 55px;
+    background: #121A25;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    /* padding-left: 10px;  */
+}
+
+.footer img {
+    width: 150px;
+    height: 32px;
+    /* object-fit: contain; */
+}
+
+.footer span {
+    color: #FFFFFF;
+    font-size: 16px; 
+}
