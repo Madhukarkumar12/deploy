@@ -1,10 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../components/Login.css'
 import bgImage from "../assets/industry1.png"
 import logo from "../assets/logo.png"
 import grok from "../assets/grok.png"
 import { LockKeyhole, Mail } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+     e.preventDefault();
+     if(email == 'admin@123' && password == 'admin'){
+        navigate('/siteai');
+     }
+     else{
+      alert('InvalidCredentials....')
+     }
+  }
+
   return (
     <div className='bg'
       style={{
@@ -33,7 +48,7 @@ const Login = () => {
               <h2>Welcome</h2>
             </div>
             <div>
-              <form className='form'>
+              <form className='form' onSubmit={handleSubmit}>
                 <div className='input'>
                   <label className='label'>Your Email</label>
                   <div className='input-wrapper'>
@@ -41,6 +56,7 @@ const Login = () => {
                       className='input-css'
                       placeholder='madhukar@gmail.com'
                       type='email'
+                      onChange={(e) => setEmail(e.target.value)}
                       required
                     />
                     <Mail className='mail-icon' />
@@ -53,12 +69,13 @@ const Login = () => {
                       className='input-css'
                       type='password'
                       placeholder='********'
+                      onChange={(e) => setPassword(e.target.value)}
                       required
                     />
                     <LockKeyhole className='password-icon' />
                   </div>
                 </div>
-                <button className='button'>Login</button>
+                <button type='submit' className='button'>Login</button>
               </form>
             </div>
           </div>

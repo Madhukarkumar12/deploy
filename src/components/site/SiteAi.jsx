@@ -8,7 +8,7 @@ const SiteAi = () => {
     <>
    <Navbar/>
    <Content/>
-   <Footer/>
+   {/* <Footer/> */}
    </>
   )
 }
