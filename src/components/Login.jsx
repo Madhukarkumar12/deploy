@@ -24,8 +24,6 @@ const Login = () => {
     <div className='bg'
       style={{
         backgroundImage: `url(${bgImage})`,
-        // filter: 'blur(3px)'
-        // filter:'brightness(20%)'
       }}>
          <div className='overlay'></div>
       <div className='login-box'>
@@ -91,6 +89,4 @@ const Login = () => {
   )
 }
 
-export default Login
-
-// 
+export default Login;
