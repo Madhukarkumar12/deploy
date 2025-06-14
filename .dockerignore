@@ -3,3 +3,6 @@ dist
 
 README.md
 .gitignore
+.git 
+Dockerfile
+docker-compose.yml

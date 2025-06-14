@@ -5,19 +5,37 @@ import logo from "../assets/logo.png"
 import grok from "../assets/grok.png"
 import { LockKeyhole, Mail } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
+import { toast } from 'react-toastify'
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit =async (e) => {
      e.preventDefault();
-     if(email == 'admin@123' && password == 'admin'){
+    //  if(email == 'admin@123' && password == 'admin'){
+    //     navigate('/siteai');
+    //  }
+    //  else{
+    //   alert('InvalidCredentials....')
+    //  }
+    console.log('Email:', email);
+    console.log('Password:', password);
+    try {
+       const response = await axios.post('http://localhost:5000/login', {
+        email,
+        password
+       })
+       if(response.data.success){
+        toast.success('Login Successful!');
         navigate('/siteai');
-     }
-     else{
-      alert('InvalidCredentials....')
-     }
+       }
+    }catch(error){
+       console.error('Error during login:', error);
+       toast.error('Login Failed. Please try again.');
+    }
+    
   }
 
   return (
