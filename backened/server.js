@@ -9,7 +9,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Dummy login credentials
-const VALID_EMAIL = 'admin@123';
+const VALID_EMAIL = 'admin@1234';
 const VALID_PASSWORD = 'admin';
 
 app.post('/login', (req, res) => {
