@@ -6,8 +6,8 @@ import Contact from './components/Contact'
 
 function App() {
   const profileData = {
-    name: 'Your Name',
-    title: 'Your Title / Role',
+    name: 'Madhukar Singh',
+    title: 'Iot Software developer',
     avatarUrl: '',
     bio: 'A brief introduction about yourself. You can talk about your interests, experience, or anything you want to share.',
     skills: ['React', 'TypeScript', 'JavaScript', 'CSS', 'HTML'],
